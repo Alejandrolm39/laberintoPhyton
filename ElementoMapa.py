@@ -1,10 +1,22 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-class ElementoMapa:
-    def __init__(self):
-        pass
+from abc import ABC, abstractmethod
 
-    def entrar(self, ):
-        pass
+class ElementoMapa(ABC):
+    def __init__(self):
+        self.padre = None
+
+    @abstractmethod    
+    def entrar(self):
+        pass 
+
+    def esHabitacion(self):
+        return false
+
+    def esPared(self):
+        return false
+
+    def esPuerta(self):
+        return false
 
