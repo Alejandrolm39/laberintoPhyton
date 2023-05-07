@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-from ElementoMapa import ElementoMapa
+from Composite.ElementoMapa import ElementoMapa
 
 class Puerta(ElementoMapa):
     def __init__(self):
@@ -12,7 +12,7 @@ class Puerta(ElementoMapa):
     def abrir(self):
         self.abierta = True
 
-    def cerrar(self):
+    def cerrar(self):   
         self.abierta = False
 
     def esPuerta(self):

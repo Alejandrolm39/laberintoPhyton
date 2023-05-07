@@ -6,17 +6,23 @@ from abc import ABC, abstractmethod
 class ElementoMapa(ABC):
     def __init__(self):
         self.padre = None
+        self.num = None
 
     @abstractmethod    
     def entrar(self):
         pass 
 
     def esHabitacion(self):
-        return false
+        return False
 
     def esPared(self):
-        return false
+        return False
 
     def esPuerta(self):
-        return false
+        return False
 
+    def esBaul(self):
+        return False
+
+    def esEspada(self):
+        return False

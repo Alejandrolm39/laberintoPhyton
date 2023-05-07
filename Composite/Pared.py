@@ -1,11 +1,14 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-from ElementoMapa import ElementoMapa
+from Composite.ElementoMapa import ElementoMapa
 
 class Pared(ElementoMapa):
     def entrar(alguien):
         return "Te has chocado con un pared"
     
     def esPared(self):
-        return true
+        return True
+
+    def __str__(self):
+        return "Una pared"
